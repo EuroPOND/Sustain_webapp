@@ -1,0 +1,8 @@
+sustain type = zscore
+Input data file = mock_data.csv
+Number of subjects = 200
+Number of startpoints = 5( parallel=True)
+Max Number of subtypes = 4
+MCMC iterations = 10000
+validation = True(10-fold)
+Biomarkers = HippocampusPrecuneusMidTemporalFusiformEntorhinal
