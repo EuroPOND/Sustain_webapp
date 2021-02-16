@@ -92,13 +92,13 @@ python3 sustain/stagesussustain_real.py
 
 # read sustainout.csv and save sustain output as variables
 SUBJ_SUBTP=$(awk -F "\"*,\"*" 'NR==2 {printf $2}' ${job_home}/sustainout.csv)
-SUBJ_STAGE=$(awk -F "\"*,\"*" 'NR==2 {printf $8}' ${job_home}/sustainout.csv)
-PROB_SUBTP=$(awk -F "\"*,\"*" 'NR==2 {printf $7}' ${job_home}/sustainout.csv)
-PROB_STAGE=$(awk -F "\"*,\"*" 'NR==2 {printf $6}' ${job_home}/sustainout.csv)
+SUBJ_STAGE=$(awk -F "\"*,\"*" 'NR==2 {printf $3}' ${job_home}/sustainout.csv)
+PROB_SUBTP=$(awk -F "\"*,\"*" 'NR==2 {printf $4}' ${job_home}/sustainout.csv)
+PROB_STAGE=$(awk -F "\"*,\"*" 'NR==2 {printf $5}' ${job_home}/sustainout.csv)
 
-PSA=$(awk -F "\"*,\"*" 'NR==2 {printf $3}' ${job_home}/sustainout.csv)
-PSB=$(awk -F "\"*,\"*" 'NR==2 {printf $4}' ${job_home}/sustainout.csv)
-PSC=$(awk -F "\"*,\"*" 'NR==2 {printf $5}' ${job_home}/sustainout.csv)
+PSA=$(awk -F "\"*,\"*" 'NR==2 {printf $6}' ${job_home}/sustainout.csv)
+PSB=$(awk -F "\"*,\"*" 'NR==2 {printf $7}' ${job_home}/sustainout.csv)
+PSC=$(awk -F "\"*,\"*" 'NR==2 {printf $8}' ${job_home}/sustainout.csv)
 
 sed -i "s#@@PSA@@#$PSA#" sustain/Histomaker.py
 sed -i "s#@@PSB@@#$PSB#" sustain/Histomaker.py
