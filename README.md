@@ -16,6 +16,6 @@ REQUIREMENTS:
 - a LAMP server: the easiest way to get it is to type `apt-get install lamp-server` in your terminal. You may have to change php settings so that large uploads are allowed.
 - FSL: a free software package useful for MRI file management. Download it from https://fsl.fmrib.ox.ac.uk/fsldownloads_registration, and install it by typing `python fslinstaller.py` (requires python2 for installation)
 - FreeSurfer 5.3: a free software for MRI segmentation. Download it at https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall5.3, then extract the files to your preferred location (default FreeSurfer location for the webapp is `/opt/FreeSurfer-5.3.0`)
-- python3: required packages to run sustain in python3 are: `abc`, `csv`, `functools`, `matplotlib`, `multiprocessing`, `numpy`, `os`, `pandas`, `pathlib`, `pathos`, `pickle`, `scipy`, `sklearn`, `time`)
+- python3: required packages to run sustain in python3 are: `abc`, `csv`, `functools`, `matplotlib`, `multiprocessing`, `numpy`, `os`, `pandas`, `pathlib`, `pathos`, `pickle`, `scipy`, `sklearn`, `time`
 - blender
 - pdflatex
